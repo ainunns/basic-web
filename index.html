@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home | Ainun's Notes</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="assets/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	</head>
+	<body>
+		<header class="banner">
+			<nav>
+				<ul class="wrapper" id="myWrapper">
+					<li class="home">
+						<ul>
+							<li><a href="javascript:void(0)">Home</a></li>
+						</ul>
+					</li>
+					<li class="menu">
+						<ul>
+							<li class="dropdown"><a href="javascript:void(0)">Notes</a>
+								<ul class="dropdown-content">
+									<li><a href="#cp">Competitive Programming</a></li>
+									<li><a href="#is">Islamic Studies</a></li>
+								</ul>
+							</li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#about">About</a></li>
+						</ul>
+					</li>
+					<li class="icon">
+						<ul>
+							<li><a href="javascript:void(0)" onclick="responsiveNavbar()"><img src="assets/images/menu-burger.png"></a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="jumbotron">
+				<h1>Welcome to Ainun's Notes</h1>
+				<p>My notes about competitive programming and Islamic studies</p>
+				<a href="#content"><img src="assets/images/angle-down-2.png" alt="angle-down" class="arrow-image"></a>
+			</div>
+		</header>
+		<main>
+			<div id="content">
+				<article id="cp">
+					<header>					
+						<h2>Recent Notes in Competitive Programming</h2>
+					</header>
+					<div class="myNotes-cp">
+						<div class="column">
+							<h3>Graph Traversal: Depth First Search (DFS)</h3>
+							<img src="assets/images/dfs.gif" alt="dfs" class="gif">
+							<font size="3" face="times" color="black">\[ \text{Time Complexity}: \\ O({N}^{2}) \text{  (adjacency matrix)} \\ O(N+M) \text{ (adjacency list)}\]</font>
+							Implementation: <a href="https://ideone.com/4A6x1l">here</a>
+						</div>
+						<div class="column">
+							<h3>Graph Traversal: Breadth First Search (BFS)</h3>
+							<img src="assets/images/bfs.gif" alt="bfs" class="gif">
+							<font size="3" face="times" color="black">\[ \text{Time Complexity}: \\ O({N}^{2}) \text{  (adjacency matrix)} \\ O(N+M) \text{ (adjacency list)}\]</font>
+							Implementation: <a href="https://ideone.com/UtHXDK">here</a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div id="content">
+				<article id="is">
+					<header>
+						<h2>Recent Notes in Islamic Studies</h2>
+					</header>
+					<div class="myNotes-is">
+						<div class="listNotes-is">
+							<section>
+								<h3 class="notesTitle0-is">Road to Return Episode 2: Finding Peace</h3>
+								<p>My key takeaway from the 2nd episode of Road to Return.</p>
+								<button onclick="readNotes(0,'is')">Read now!</button>
+							</section>
+							<section>
+								<h3 class="notesTitle1-is">Road to Return Episode 3: Content with God</h3>
+								<p>My key takeaway from the 3rd episode of Road to Return.</p>
+								<button onclick="readNotes(1,'is')">Read now!</button>
+							</section>
+							<section>
+								<h3 class="notesTitle2-is">Road to Return Episode 4: What are Sins?</h3>
+								<p>My key takeaway from the 4th episode of Road to Return.</p>
+								<button onclick="readNotes(2,'is')">Read now!</button>
+							</section>
+						</div>
+						<div class="reading-is">
+							<h3 class="IamReading-is">You're not reading anything</h3>
+							<div class="notes0-is">
+								<ol>
+									<li>Perhaps not having everything you want is better than having everything you want that allows you to transgress and feel that you have no limits. <strong>Whatever I want, I can have at any time.</strong></li>
+									<li>Try to learn to find peace with all conditions inside yourself.</li>
+									<li>Nice things are not the secret to happiness</li>
+									<li>The greatest joy you will have ability to enjoy things from the inside out.</li>
+									<li>Islam wants us to connect to Allah, Subh'anaHu Wa Ta-A'la That in whatever condition we are, <strong>we have rida with Allah.</strong></li>
+								</ol>
+								<br>
+								<p>Road to Return is a series on Youtube, posted by Yaqeen Institute. <a href="https://www.youtube.com/playlist?list=PLQ02IYL5pmhHXATqNyid4zo45xOiKQ3eB">Click here</a> to watch the full series.</p>
+							</div>
+							<div class="notes1-is">
+								<ol>
+									<li>Say <q>Raditu billahi Rabba wabil Islami dina wa bi Muhammad SallAllahu Alaihi Wasallam nabiyya</q> that means <q>I'm happy with Allah. I'm happy with Islam. And I'm happy that Muhammad SallAllahu Alaihi Wasallam represents me.</q> three times in the morning and three times before you sleep that reminds you of what you should feel inside and try to bring yourself to that contentment.</li>
+									<li>I always have Allah, because Allah always has my back. Allah is not unaware of my condition</li>
+									<li>Allah Subh'anaHu Wa Ta-A'la has a plan and a purpose for me. That whatever experience, good, bad or ugly that I've faced in my day, in my week, in my month, it's just a dot in the great picture and tapestry of my life. It's a dark spot, but in the rest of my life there is a huge, beautiful, sun-filled picture.</li>
+								</ol>
+								<br>
+								<p>Road to Return is a series on Youtube, posted by Yaqeen Institute. <a href="https://www.youtube.com/playlist?list=PLQ02IYL5pmhHXATqNyid4zo45xOiKQ3eB">Click here</a> to watch the full series.</p>
+							</div>
+							<div class="notes2-is">
+								<ol>
+									<li>Sins is not inherited, and it's not through heredity</li>
+									<li>We all begin on a clear slate that can be wiped again and again.</li>
+									<li>Categories of sins are Syahawat (desire) and Syubuhat (doubts)</li>
+									<li>Islam was sent us to protect our 5 things, faithfulness in God, the sancity of life, property and other people's belongings, the clarity of thought, and lineages and Family Structures.</li>
+								</ol>
+								<br>
+								<p>Road to Return is a series on Youtube, posted by Yaqeen Institute. <a href="https://www.youtube.com/playlist?list=PLQ02IYL5pmhHXATqNyid4zo45xOiKQ3eB">Click here</a> to watch the full series.</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+			<aside id="about">
+				<article>
+					<h2>About Me</h2>
+					<section class="outerIntro">
+						<img src="assets/images/profile.jpg" alt="author's profile" class="profile">
+						<p class="introduction">Hi there, <span>&#128075</span>. My name is Ainun Nadhifah Syamsiyah. They call me Ainun.  I am a dedicated student with a strong interest in computer science and cyber security. I have three years of experience in learning data structures and algorithms from competing in a programming contest, and now I am currently learning to be a front end web developer.</p>
+					</section>
+				</article>
+			</aside>
+		</main>
+		<footer>
+			<p>&copy; 2022 Ainun Nadhifah Syamsiyah. Credit to <a href='https://www.freepik.com/vectors/galaxy-universe'>freepik</a>, <a href="https://www.flaticon.com/free-icons/github" title="github icons">Flaticon</a>, <a href="https://www.flaticon.com/free-icons/github" title="github icons">Flaticon</a></p>
+			<div id="contact">
+				<a href="https://github.com/ainunns/"><img src="assets/images/github.png" alt="github"></a>
+				<a href="https://www.linkedin.com/in/ainunsy1/"><img src="assets/images/linkedin.png" alt="linkedin"></a>
+				<a href="https://codeforces.com/profile/ainunsy1"><img src="assets/images/codeforces.png" alt="codeforces"></a>
+			</div>
+		</footer>
+		<script src="assets/script.js"></script>
+		<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+		</script>
+	</body>
+</html>

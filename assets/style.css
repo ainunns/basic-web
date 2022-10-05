@@ -1,0 +1,306 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header.banner {
+	height: 100vh;
+	background-image: url("images/galaxy-background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+nav {
+	top: 0;
+	margin: 0 50px;
+	padding: 15px 0;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper li {
+	display: inline-block;
+	list-style-type: none;
+	position: relative;
+	padding: 15px 25px;
+}
+
+.wrapper li.home:hover, .menu ul li:hover, ul.dropdown-content li:hover {
+	border: 1px solid white;
+	border-spacing: 0;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+ul.dropdown-content li:hover {
+	border-radius: 0px;
+}
+
+.wrapper li a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+ul.dropdown-content {
+	position: absolute;
+	display: none;
+}
+
+ul.dropdown-content li {
+	display: block;
+	background-color: rgb(74, 116, 179);
+	padding: 15px 25px;
+}
+
+ul.dropdown-content li a {
+	font-size: 1.25em;
+}
+
+.wrapper li.dropdown:hover ul.dropdown-content {
+	font-weight: bold;
+	display: block;
+}
+
+li.icon {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	li.menu {
+		display: none;
+	}
+
+	li.icon {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper.responsive, .wrapper.responsive ul.dropdown-content {
+		position: relative;
+	}
+
+	.wrapper.responsive li.icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.wrapper.responsive li {
+		display: block;
+	}
+
+	.wrapper.responsive li.menu {
+		position: absolute;
+		top: 90px;
+		background-color: rgb(17, 66, 139);
+		right: inherit;
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	nav {
+		margin: 0 15px;
+	}
+}
+
+.jumbotron {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+.jumbotron h1 {
+	padding: 125px 50px 50px 50px;
+}
+
+.jumbotron p {
+	padding: 50px;
+}
+
+.arrow-image {
+	width: 90px;
+}
+
+@media screen and (max-width: 768px) {
+	.jumbotron {
+		font-size: 20px;
+	}
+
+	.jumbotron h1 {
+		padding: 80px 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.arrow-image {
+		width: 80px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.jumbotron {
+		font-size: 15px;
+	}
+	
+	.jumbotron h1 {
+		padding: 60px 50px;
+	}
+
+	.arrow-image {
+		width: 60px;
+	}
+}
+
+article h2 {
+	text-align: center;
+	color: white;
+	padding: 15px;
+	font-size: 2em;
+	padding: 20px;
+}
+
+#content:nth-child(even){
+	background-color: #283DB6;
+}
+
+#content:nth-child(odd){
+	background-color: #18318E;
+}
+
+#cp, #is{
+	padding: 15px 25px;
+}
+
+.myNotes-cp {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	border-collapse: collapse;
+	border-radius: 10px;
+	margin: 3px;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 10px;
+	background-color: #62bbeb;
+	width: 50%;
+}
+
+.gif {
+	display: block;
+	margin: 0 auto;
+	max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+	.myNotes-cp {
+		flex-direction: column;
+	}
+
+	.column {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.gif {
+		max-width: 200px;
+	}
+}
+
+.myNotes-is, .listNotes-is {
+	display: flex;
+}
+
+.listNotes-is {
+	flex-basis: 50%;
+	flex-direction: column;
+}
+
+.listNotes-is section {
+	margin: 5px 25px;
+	text-align: justify;
+	text-justify: inter-word;
+	background-color: #62bbeb;
+	padding: 15px 40px;
+	border-radius: 15px;
+}
+
+.reading-is {
+	background-color: rgb(193, 200, 206);
+	margin: 15px;
+	padding: 35px;
+	width: 50%;
+}
+
+h3 {
+	text-align: center;
+	margin: 5px;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	background-color: aqua;
+	border: none;
+	font-size: 1.25em;
+	padding: 10px 15px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.myNotes-is {
+		flex-direction: column;
+	}
+
+	.reading-is {
+		width: inherit;
+	}
+}
+
+.profile {
+	max-width: 250px;
+}
+
+aside {
+	background-color: #18318E;
+	text-align: center;
+}
+
+.outerIntro {
+	padding: 20px 40px;
+}
+
+.introduction {
+	background-color: #62bbeb;
+	margin: 30px;
+	padding: 15px 25px;
+	border-radius: 10px;
+	font-size: 1.25em;
+	font-weight: 500;
+}
+
+footer {
+	text-align: center;
+	background-color: rgb(5, 57, 136);
+	padding: 15px;
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
